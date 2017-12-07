@@ -6,3 +6,5 @@
 * struts2-json-plugin.jar
 * struts2-spring-plugin.jar
 
+#### v1.2:
+* 加入gradle文件
