@@ -2,6 +2,7 @@ package com.tornado.domain;
 
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "t_user")
@@ -17,6 +18,10 @@ public class User {
 
     @Column(name = "password")
     private String password;
+
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.LAZY, targetEntity = Order.class, orphanRemoval = true)
+    @JoinColumn(name = "user_id")
+    private Set<Order> orders;
 
     public Integer getId() {
         return id;
@@ -40,6 +45,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
     }
 
     @Override

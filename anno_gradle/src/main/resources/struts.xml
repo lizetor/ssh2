@@ -10,4 +10,14 @@
 
     <constant name="struts.i18n.encoding" value="UTF-8"/>
 
+    <package name="default" extends="struts-default">
+        <interceptors>
+            <interceptor name="authority" class="com.tornado.web.interceptor.CheckInterceptor"/>
+            <interceptor-stack name="interceptorStack1">
+                <interceptor-ref name="authority"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+    </package>
+
 </struts>
