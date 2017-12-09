@@ -6,6 +6,10 @@
 * struts2-json-plugin.jar
 * struts2-spring-plugin.jar
 
+#### v1.6
+* 加入struts2 interceptor的使用
+* 加入hibernate OneToMany和ManyToOne的使用
+
 #### v1.5
 * 加入银行卡和身份证验证类
 
