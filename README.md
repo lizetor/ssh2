@@ -6,6 +6,9 @@
 * struts2-json-plugin.jar
 * struts2-spring-plugin.jar
 
+#### v1.7
+* 加入分页
+
 #### v1.6
 * 加入struts2 interceptor的使用
 * 加入hibernate OneToMany和ManyToOne的使用
