@@ -377,15 +377,4 @@ public class CheckIdCard {
         }
         return a;
     }
-
-    public static void main(String[] args) throws Exception {
-        String idcard15 = "130321860311123";
-        String idcard18 = "13022919830501231";
-        // 15位身份证
-        System.out.println(isValidatedAllIdcard(idcard15));
-        // 18位身份证
-        System.out.println(isValidatedAllIdcard(idcard18));
-        // 15位身份证转18位身份证
-        System.out.println(convertIdcarBy15bit(idcard15));
-    }
 }

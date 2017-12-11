@@ -45,9 +45,4 @@ public class CheckBankCard {
         }
         return (luhmSum % 10 == 0) ? '0' : (char) ((10 - luhmSum % 10) + '0');
     }
-
-    public static void main(String[] args) {
-        boolean checkBankCard = checkBankCard("6217991100001804444");
-        System.out.println(checkBankCard);
-    }
 }
